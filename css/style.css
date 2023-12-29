@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 89, 89);
+    background-color: #F7F8F9;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.container{
+    
+}
+
+.container-up{
+    padding: 8px 10px 8px 10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1) ;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 9%);
+}
+
+.symbol1 {
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-weight: 400;
+}
+
+.symbol1:hover {
+    background-color: #F0F0F0;
+    
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.logo p {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(95, 99, 104);
+}
+
+.container-down {
+    flex-direction: column;
+}
+
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    top: 57px;
+    bottom: 0;
+    right: -200px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: -1px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+
+#sidebar2{
+    position: fixed;
+    width: 200px;
+    top: 57px;
+    bottom: 0;
+    left: -200px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+
+
+.side-menu-item{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    color: rgb(95, 99, 104);
+    font-weight: 400;
+   padding: 10px 0px 10px 20px;
+    cursor: pointer;
+    
+}
+
+.side-menu-item-box:hover .symbol6 {
+    display: block;
+}
+
+
+
+.side-menu-item-box:hover {
+    background-color: #F7F8F9;
+}
+
+.sidebar-active{
+    right: 0 !important;
+}
+
+.sidebar2-active{
+    left: 0 !important;
+}
+
+.closesidebar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 6px 10px 0;
+
+}
+
+.tile-background{
+    width: 180px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 12px;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+.box1 {
+    justify-content: space-between;
+    width: 98%;
+   margin: 77px 0px 0px 20px;
+}
+
+.box1 input {
+    font-size: 18px;
+    line-height: 17px;
+    color: #787C81;
+    border: none;
+    background-color: transparent;
+}
+
+.box1 input:focus {
+    
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.box1 input::placeholder {
+    color: #BFBFBF;
+    font-size: 14px ;
+    
+}
+
+textarea::placeholder{
+    color: #BFBFBF;
+    font-size: 14px ;
+}
+
+.symbol2{
+    color: #787C81;
+    margin-right: 10px;
+    
+}
+
+.box-cards {
+    
+    margin:0 20px 0 0;
+    overflow: auto;
+    align-items: flex-start;
+    height:85vh;
+    
+   
+}
+
+.card1{
+    min-width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    border: solid 1px rgba(0, 0, 0, 0.1) ;
+    
+}
+
+.card1 input {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border: none;
+    color: #595959;
+}
+
+.card1 input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.card1 input::placeholder {
+    color: #BFBFBF;
+    font-size: 12px ;
+    font-weight: 300;
+    
+}
+
+.card1-top{
+    margin: 15px 10px 26px 15px;
+    justify-content: space-between;
+}
+
+
+
+.btn-newColumn{
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 15px;
+    color: #787C81;
+    background-color: #FBFCFC;
+    border: none;
+    border-radius: 8px;
+    height: 70px;
+    padding: 10px 62px 10px 62px;
+    min-width: 300px;
+
+}
+
+.btn-newColumn2{
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 15px;
+    color: #787C81;
+    background-color:#F7F8F9;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 12px   38px ;
+
+}
+
+.btn-newCard{
+    
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgb(95, 99, 104);
+    letter-spacing: 0.15px;
+    border: none;
+    background: none;
+    padding: 0;
+    
+}
+
+.btn-newCard-color{
+    font-size: 25px;
+    color: #5383EC;
+    cursor: pointer;
+}
+
+.card1-bottom{
+    margin:  15px 15px 15px 15px  ;
+    cursor: pointer;
+}
+
+.card1-bottom:hover .btn-newCard-text {
+    
+    color: #5383EC;
+    cursor: pointer;
+    
+    
+
+}
+
+#box-input-cards {
+    background-color:#F7F8F9;
+    border-radius: 8px;
+    display: none;
+}
+
+
+.card-title {
+    margin: 15px 15px 5px 35px;
+    color: #202124;
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 170px;
+    background-color: transparent;
+}
+
+.card-title:focus {
+    color: #202124;
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 170px;
+}
+
+textarea {
+   min-width: 80%;
+    height : auto;
+}
+
+.card-description{
+    margin-left:  35px;
+    font-size: 15px;
+    color: #595959;
+    font-weight: 300;
+    max-width: 170px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.card-time{
+    margin:0 0 15px 35px;
+    background-color: transparent;
+    font-size: 15px !important;
+    color: #BFBFBF !important;
+    font-weight: 300 !important;
+}
+.card-create {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.symbol5 {
+    margin-right:30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #595959;
+    
+}
+
+
+.symbol5:hover {
+    background-color: #E8EAEB;
+    border-radius: 50px;
+    
+}
+
+.symbol6{
+    font-size: 16px;
+    margin-right: 10PX;
+    display: none;
+    cursor: pointer;
+}
+.card-description:focus {
+    font-size: 13px;
+    color: #595959;
+    font-weight: 300;
+    max-width: 170px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+/* блок одна карточка */
+.box-tmpl-card{
+    margin: 0 0 5px 0;
+    width: 300px;
+    padding: 5px 0 5px 0;
+}
+
+.box-tmpl-card:hover .symbol3{
+    display: block;
+}
+
+.box-tmpl-card:hover{
+    background-color: #F7F8F9;
+    
+    
+   
+}
+
+
+
+.text1-tmpl-card {
+    color: #202124;
+    font-size: 15px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+   
+    
+}
+
+.text2-tmpl-card {
+    font-size: 13px;
+    margin:0 0 5px 15px;
+
+}
+
+.text3-tmpl-card{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.symbol3 {
+    font-size: 17px;
+    color: #787C81;
+    display: none;
+    cursor: pointer;
+    margin-right: 14px ;
+}
+
+
+.symbol3:hover {
+    color: #595959;
+}
+
+
+
+
+
+/* Универсальны классы  */
+
+.flex-box {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.flex-center2{
+    justify-content: center;
+}
+.symbol {
+    cursor: pointer;
+    transition: all 0.1s;
+    font-weight: 400;
+}
+
+.symbol4 {
+    font-size: 22px;
+    max-width: 63px;
+    max-height: 63px;
+    overflow: hidden;
+    
+}
+
+.none1 {
+    display: block !important;
+}
+
+.bg-fix {
+    background-size: cover;
+    background-position: center;
+}
+.board {
+    height: 100vh;
+}
